@@ -1,0 +1,299 @@
+.slider {
+    width: 400px;
+    height: 400px;
+    position: relative;
+    top: 50px;
+    border-radius: 12px;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #bbb;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .slick-dots li.slick-active button {
+    background-color: #fff;
+  }
+  @media only screen and (max-width: 768px) {
+     body{
+        background: rgb(56, 58, 58);
+     }
+     h1 {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      color: #333;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-top: 20px;
+      text-align: left; /* Выравнивание текста по центру */
+      padding: 10px 10px 10px 40px; /* добавлен левый внутренний отступ для иконки */
+    }
+    
+    h2 {
+      font-size: 32px; /* Размер шрифта */
+      font-weight: bold; /* Жирный шрифт */
+      color: #333; /* Цвет текста */
+      text-align: left; /* Выравнивание текста по центру */
+      position: relative;
+      top: 10px;
+      left: 20px;
+    }
+  /* Стили для точек навигации */
+  .slick-dots {
+    position: absolute;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    list-style: none;
+  }
+    .slider {
+      height: 350px;
+      width: 350px;
+      position: relative;
+      top: 20px;
+      left: 18px;
+      right: 15px;
+    }
+    .slider img {
+      object-fit: cover;
+      height: 350px;
+      width: 350px;
+      border-radius: 50px;
+    }
+    .slider > div:not(:last-child) {
+      margin-right: -50px;
+    } 
+  }
+@media (max-width: 600px) {
+  #filterable-cards {
+    justify-content: center;
+  }
+
+  #filterable-cards .card {
+    width: calc(100% / 2 - 10px);
+  }
+
+}
+/*свой стиль карточек */
+.plaque {
+  border: none;
+  width: 333px;
+  background-color: #eee7e7; /* Цвет фона плашки */
+  padding: 10px; /* Отступы внутри плашки */
+  border: 0px solid #ccc; /* Обводка плашки */
+  border-radius: 5px; /* Закругление углов плашки */
+   position: relative;
+   left: 20px;
+   border-radius: 22px;
+   height: 150px;
+   font-family: 'Open Sans', sans-serif; /* Шрифт текста */
+   font-size: 20px; /* Размер шрифта */
+   font-weight: bold; /* Жирный шрифт */
+   color: #333; /* Цвет текста */
+   line-height: 1.5; /* Межстрочный интервал */
+   text-align: justify; /* Выравнивание текста по ширине */
+   margin: 0; /* Убираем отступы */
+   padding: 10px 10px 10px 40px; /* добавлен левый внутренний отступ для иконки */
+}
+.plaque[id="1"] {
+  margin-top: 17px;
+  height: 100px;
+  background-color:#faecd1;
+  padding: 10px 10px 10px 40px; /* добавлен левый внутренний отступ для иконки */
+  position: relative; /* Устанавливаем родительский элемент позиционированным */
+}
+
+.plaque[id="2"] {
+  margin-top: 17px;
+  height: 50px;
+  border-radius: 40px;
+  background-color:  #faebce;
+  padding: 10px 10px 10px 40px; /* добавлен левый внутренний отступ для иконки */
+  position: relative; /* Устанавливаем родительский элемент позиционированным */
+}
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  width: 82%;
+  height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider > div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slider > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.payment-methods {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.payment-methods h2 {
+  font-size: 2em;
+  color: #007bff;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.payment-methods p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 30px;
+}
+
+.payment-methods ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.payment-methods li {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.payment-methods li i {
+  font-size: 1.5em;
+  margin-right: 10px;
+  margin-left: 30px;
+  color: #010911;
+}
+.plaque {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -160px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+}
+
+.plaque h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+  color: #007bff;
+}
+.plaque p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  color: #333;
+}
+.price-section {
+  width: 330px;
+  background-color: #f7f6d2;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-right: 10px;
+  margin-left: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.price-section p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 30px;
+  
+}
+
+.price {
+  color: #333;
+}
+
+.discount {
+  color: green;
+}
+.contact-seller {
+  height: 120px;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: 1rem;
+  margin-right: 30px;
+  margin-left: 20px;
+  border-radius: 25px;
+}
+
+.contact-seller h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-seller a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #333;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.contact-seller a i {
+  font-size: 1.5rem;
+  margin-right: 0.5rem;
+  color: #0088cc;
+}
+
+
+
+
+
+
